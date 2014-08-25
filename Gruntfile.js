@@ -35,7 +35,7 @@ module.exports = function (grunt) {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
         tasks: ['newer:jshint:all'],
         options: {
-            livereload: true
+          livereload: true
         }
       },
       jsTest: {
@@ -50,14 +50,14 @@ module.exports = function (grunt) {
         files: ['Gruntfile.js']
       },
       livereload: {
-          options: {
-            livereload: '<%= connect.options.livereload %>'
-          },
-          files: [
-            '<%= yeoman.app %>/{,*/}*.html',
-            '.tmp/styles/{,*/}*.css',
-            '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
-          ]
+        options: {
+          livereload: '<%= connect.options.livereload %>'
+        },
+        files: [
+          '<%= yeoman.app %>/{,*/}*.html',
+          '.tmp/styles/{,*/}*.css',
+          '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+        ]
       }
     },
 
@@ -231,10 +231,10 @@ module.exports = function (grunt) {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
       /*
-      options: {
-        assetsDirs: ['<%= yeoman.dist %>','<%= yeoman.dist %>/img']
-      }
-      */
+       options: {
+       assetsDirs: ['<%= yeoman.dist %>','<%= yeoman.dist %>/img']
+       }
+       */
     },
 
     concat: {
